@@ -6,7 +6,7 @@ class Polygon:
 
     @property
     def polygon_type(self):
-        return f"The polygon type is {self.name}"
+        return " The polygon type is {0}".format(self.name)
 
 class Rectangle(Polygon):
     def __init__(self, width, height):
@@ -18,6 +18,5 @@ class Rectangle(Polygon):
         return self.width * self.height
 
 rectangle = Rectangle(5, 10)
-
-print(rectangle.area)           # 50
-print(rectangle.polygon_type)   # The polygon type is Rectangle
+print(rectangle.area)         # 50
+print(rectangle.polygon_type) # The polygon type is Rectangle
