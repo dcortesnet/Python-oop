@@ -5,4 +5,4 @@ class Person:
         
 person = Person(first_name="Diego", last_name="Cortes")
 
-print(person)
+print(person) # <__main__.Person object at 0x000001E6DEF8E020>
